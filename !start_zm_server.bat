@@ -7,6 +7,8 @@ set cfg=server_zm.cfg
 set name=ZM 1
 ::Port used by the server (default: 28960)
 set port=28960
+::Mod name (default "")
+set mod=""
 ::Only change this when you don't want to keep the bat files in the game folder. MOST WON'T NEED TO EDIT THIS!
 set gamepath=%cd%
 
@@ -18,6 +20,6 @@ echo (%date%)  -  (%time%) %name% server start.
 
 cd /D %LOCALAPPDATA%\Plutonium
 :server
-start /wait /abovenormal bin\plutonium-bootstrapper-win32.exe t4sp "%gamepath%" -dedicated +set zombiemode 1 +set key %key% +sv_config %cfg% +net_port %port%
+start /wait /abovenormal bin\plutonium-bootstrapper-win32.exe t4sp "%gamepath%" -dedicated +set zombiemode 1 +set key %key% +set fs_game %mod% +sv_config %cfg% +net_port %port%
 echo (%date%)  -  (%time%) WARNING: %name% server closed or dropped... server restarts.
 goto server
