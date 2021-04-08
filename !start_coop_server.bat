@@ -10,7 +10,7 @@ set port=28960
 ::Only change this when you don't want to keep the bat files in the game folder. MOST WON'T NEED TO EDIT THIS!
 set gamepath=%cd%
 
-title PlutoniumT6 - %name% - Server restarter
+title PlutoniumT4 CO-OP - %name% - Server restarter
 echo Visit plutonium.pw / Join the Discord (a6JM2Tv) for NEWS and Updates!
 echo Server "%name%" will load %cfg% and listen on port %port% UDP!
 echo To shut down the server close this window first!
