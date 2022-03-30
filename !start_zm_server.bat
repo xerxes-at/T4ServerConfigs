@@ -1,7 +1,7 @@
 @echo off
 ::Paste the server key from https://platform.plutonium.pw/serverkeys here
 set key=placeServerKeyHere
-::Name of the config file the server should use. (default: dedicated.cfg)
+::Name of the config file the server should use. (default: server_zm.cfg)
 set cfg=server_zm.cfg
 ::Name of the server shown in the title of the cmd window. This will NOT bet shown ingame.
 set name=ZM 1
